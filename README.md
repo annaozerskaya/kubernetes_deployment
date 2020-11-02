@@ -21,4 +21,6 @@ Key  | Type | Required  | Description | Default
 ------------- | ------------- | ------------- | ------------- | -------------
 metadata | map  | true | Standard service's metadata.  | none 
 spec  | map  | true  | Defines the behavior of a service.  | none
-spec.selector  | map  | false  | Route service traffic to pods with label keys and values matching this selector.  | none
+spec.port  | map  | true  | The list of ports that are exposed by this service.  | none
+spec.container  | map  | false  | Compute Resources required by this container.  | none
+
