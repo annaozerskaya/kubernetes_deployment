@@ -82,6 +82,13 @@ spec.metric.external  | map  | false  | A global metric that is not associated w
 spec.metric.selector  | map  | false  | The label selector for the given metric  | none
 spec.external.target  | map  | true  | The target for the given metric.  | none
 
+# kubernetes_service_account
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard service account's metadata.  | none 
+secret  | map  | false  | A list of secrets allowed to be used by pods running using this Service Account.  | none
+secret.metadata  | true  | Standard metadata.  | none
+
 
 
 
