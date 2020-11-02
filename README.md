@@ -19,4 +19,6 @@ liveness_probe.period_seconds  | string  | false  | How often (in seconds) to pe
 # kubernetes_service
 Key  | Type | Required  | Description | Default
 ------------- | ------------- | ------------- | ------------- | -------------
-metadata | map  | true | Standard deployment's metadata.  | none 
+metadata | map  | true | Standard service's metadata.  | none 
+spec  | map  | true  | Defines the behavior of a service.  | none
+spec.selector  | map  | false  | Route service traffic to pods with label keys and values matching this selector.  | none
