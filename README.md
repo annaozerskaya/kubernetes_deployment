@@ -80,7 +80,7 @@ spec.scale_target_ref  | map  | true  | Reference to scaled resource. e.g. Repli
 spec.metric  | map  | false  | A metric on which to scale.  | none
 spec.metric.external  | map  | false  | A global metric that is not associated with any Kubernetes object.  | none
 spec.metric.selector  | map  | false  | The label selector for the given metric  | none
-spec.external.target  | map  | true  | he target for the given metric.  | none
+spec.external.target  | map  | true  | The target for the given metric.  | none
 
 
 
