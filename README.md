@@ -52,4 +52,25 @@ metadata | map  | true | Standard config map's metadata. | none
 data  | map  | false  | Data contains the configuration data.  | none
 binary_data  | map  | false  | BinaryData contains the binary data.  | none
 
+# kubernetes_job
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard resource's metadata.  | none 
+spec  | map  | true  | Specification of the desired behavior of a job.  | none
+spec.template  | map  | false  | Describes the pod that will be created when executing a job.  | none
+spec.template.metadata  | map  | true  | Standard  metadata.  | none
+spec.container  | map  | false  | List of containers belonging to the pod.  | none
+
+# kubernetes_cron_job
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard resource's metadata.  | none 
+
+
+
+
+
+
+
+
 
