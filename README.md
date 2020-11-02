@@ -71,7 +71,16 @@ spec.job_template.metadata  | map  | true  | Standard object's metadata of the j
 spec.job_template.spec  | map  | true  |  Specification of the desired behavior of the job.  | none
 spec.container  | map  | false  | List of containers belonging to the pod. | none
 
-
+# kubernetes_horizontal_pod_autoscaler
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard horizontal pod autoscaler's metadata.  | none 
+spec  | map  | true  | Behaviour of the autoscaler.  | none
+spec.scale_target_ref  | map  | true  | Reference to scaled resource. e.g. Replication Controller  | none
+spec.metric  | map  | false  | A metric on which to scale.  | none
+spec.metric.external  | map  | false  | A global metric that is not associated with any Kubernetes object.  | none
+spec.metric.selector  | map  | false  | The label selector for the given metric  | none
+spec.external.target  | map  | true  | he target for the given metric.  | none
 
 
 
