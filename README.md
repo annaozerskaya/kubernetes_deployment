@@ -89,6 +89,10 @@ metadata | map  | true | Standard service account's metadata.  | none
 secret  | map  | false  | A list of secrets allowed to be used by pods running using this Service Account.  | none
 secret.metadata  | map  | true  | Standard metadata. | none
 
+# kubernetes_stateful_set
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard Kubernetes object metadata.  | none 
 
 
 
