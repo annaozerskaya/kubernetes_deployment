@@ -45,7 +45,11 @@ metadata | map  | true | Standard secret's metadata.  | none
 data  | map  | false | A map of the secret data.  | none
 type  | map  | false  | The secret type.  | none
 
-
-
+# kubernetes_config_map
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard config map's metadata. | none 
+data  | map  | false  | Data contains the configuration data.  | none
+binary_data  | map  | false  | BinaryData contains the binary data.  | none
 
 
