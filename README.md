@@ -65,7 +65,11 @@ spec.container  | map  | false  | List of containers belonging to the pod.  | no
 Key  | Type | Required  | Description | Default
 ------------- | ------------- | ------------- | ------------- | -------------
 metadata | map  | true | Standard resource's metadata.  | none 
-
+spec  | map  | true  | Spec defines the behavior of a CronJob.  | none
+spec.job_template  | map  | true  | Specifies the job that will be created when executing a CronJob.  | none
+spec.job_template.metadata  | map  | true  | Standard object's metadata of the jobs created from this template.  | none
+spec.job_template.spec  | map  | true  |  Specification of the desired behavior of the job.  | none
+spec.container  | map  | false  | List of containers belonging to the pod. | none
 
 
 
