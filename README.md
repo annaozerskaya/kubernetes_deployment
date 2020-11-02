@@ -37,3 +37,15 @@ liveness_probe.http_get  | map  | false  | Specifies the http request to perform
 liveness_probe.http_get.http_header  | map  | false  | Scheme to use for connecting to the host.  | none
 spec.dns_config  | map  | false  | Specifies the DNS parameters of a pod.  | none
 spec.dns_config.option  | map  | false  | A list of DNS resolver options specified as blocks with name/value pairs. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy.  | none
+
+# kubernetes_secret
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard secret's metadata.  | none 
+data  | map  | false | A map of the secret data.  | none
+type  | map  | false  | The secret type.  | none
+
+
+
+
+
