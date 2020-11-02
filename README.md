@@ -15,3 +15,8 @@ liveness_probe.http_get  | map  | false  | Specifies the http request to perform
 liveness_probe.http_get.http_header  | map  | false  | Scheme to use for connecting to the host.  | none
 liveness_probe.initial_delay_seconds  | string  | false  | Number of seconds after the container has started before liveness probes are initiated.  | none
 liveness_probe.period_seconds  | string  | false  | How often (in seconds) to perform the probe  | 30s
+
+# kubernetes_service
+Key  | Type | Required  | Description | Default
+------------- | ------------- | ------------- | ------------- | -------------
+metadata | map  | true | Standard deployment's metadata.  | none 
